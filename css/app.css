@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffff;
+}
+
+@media (min-width:768px) {
+    .profile {
+        width: 750px;
+    }
+}
+
+@media (min-width:990px) {
+    .profile {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .profile {
+        width: 1170px;
+    }
+}
+
+.profile {
+    padding: 80px;
+    min-height: 100vh;
+    background-image: url(../images/johannes-heel-OPsdsaE1lFQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .profile-card {
+       width: 150%;
+    }
+}
+
+
+.profile-card .img-box {
+    max-width: 150px;
+    margin: auto;
+}
+
+.profile-card .img-box img {
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-card .info {
+    margin-top: 20px;
+}
+
+.profile-card .info h1 {
+    color: #ffff;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.profile-card .number {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.profile-card .number .number-items h2 {
+    font-size: 22px;
+}
+
+.profile-card .btns {
+    margin-top: 20px;
+    
+}
+
+.profile-card .btns .btn {
+    margin: 10px;
+    border-radius: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    vertical-align: middle;
+    user-select: none;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: #ffff;
+    border-radius: 15px;
+}
+
+.btn-1 {
+    background-color: hsl( 0,70% , 60%);
+}
+
+.btn-2 {
+    background-color: hsl( 0, 0 , 100%);
+    border: 1px solid #ffff;
+}
